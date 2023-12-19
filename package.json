@@ -1,0 +1,17 @@
+{
+  "name": "advent2023",
+  "version": "1.0.0",
+  "description": "Advent of code 2023",
+  "main": "index.js",
+  "scripts": {
+    "fmt": "prettier -w .",
+    "build": "tsc",
+    "all": "npm run fmt && npm run build"
+  },
+  "author": "Aleksei Bykov",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}
