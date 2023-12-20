@@ -2,9 +2,9 @@
 
 set -e
 
-latest_script=`ls day*ts | tail -1 | sed -e 's/ts/js/'`
-latest_example=`ls day*ts | tail -1 | sed -e 's/ts/example/'`
-latest_input="inputs/`ls day*ts | tail -1 | sed -e 's/ts/input/'`"
+latest_script=`ls day*ts | sort | tail -1 | sed -e 's/ts/js/'`
+latest_example=`ls day*ts | sort | tail -1 | sed -e 's/ts/example/'`
+latest_input="inputs/`ls day*ts | sort | tail -1 | sed -e 's/ts/input/'`"
 
 npm run all
 
